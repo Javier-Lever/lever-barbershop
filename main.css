@@ -1,0 +1,70 @@
+html {
+    font-size: 22px;
+}
+
+body {
+    background-color: #29293b;
+    color: #f96b6b;
+}
+
+#main-box {
+    margin: 0px 40px;
+}
+
+nav {
+    float:right;
+    font-size: 35px;
+    margin-top: 40px;
+}
+
+nav ul {
+list-style-type: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 10px;
+    word-spacing: -5px;
+}
+
+#logo{
+    max-width: 20%;
+    height: auto;
+}
+
+#me{
+    max-width: 50%;
+    height: auto;
+}
+#image1{
+    max-width: 50%;
+    height: auto;
+}
+#image2{
+    max-width: 50%;
+    height: auto;
+}
+
+#image3{
+    max-width: 50%;
+    height: auto;
+}
+
+#barbershop1{
+    max-width: 50%;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+#barbershop2{
+    max-width: 50%;
+    height: auto;
+}
+
+a:visited {
+    color: #f96b6b;
+}
+
+a {
+    text-decoration: none;
+}
