@@ -1,5 +1,7 @@
 html {
     font-size: 22px;
+    padding: 0;
+    margin: 0;
 }
 
 body {
@@ -11,46 +13,164 @@ body {
     margin: 0px 40px;
 }
 
-nav {
-    float:right;
-    font-size: 35px;
-    margin-top: 40px;
+
+/* Navigation */
+
+header{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav ul {
-list-style-type: none;
+header>nav>ul{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
 }
 
-nav li {
-    display: inline-block;
-    margin-right: 10px;
-    word-spacing: -5px;
+header>nav>ul>li>a{
+    color:#f96b6b;
+    font-size: x-large;
 }
+
+/* Logo */
 
 #logo{
-    max-width: 20%;
+    max-width: 10%;
     height: auto;
 }
 
-#me{
-    max-width: 50%;
-    height: auto;
-}
-#image1{
-    max-width: 50%;
-    height: auto;
-}
-#image2{
-    max-width: 50%;
-    height: auto;
+/* main Title */
+h1{
+    text-align: center;
 }
 
-#image3{
-    max-width: 50%;
-    height: auto;
+/* Hero section */
+main{
+  height: 100vh;
+  width: 100%;
+
+  background-image: url("images/Me.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  padding-left: 2rem;
+}
+main>h2{
+    color: #fa5d5d;
 }
 
-#barbershop1{
+main>p{
+    max-width: 40%;
+    color: #fa5d5d;
+}
+
+
+/* Client slider */
+#clientes{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+
+  .mySlides>img{
+    max-height: 549px;
+    object-fit: contain;
+    width: auto;
+  }
+
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: #f96b6b;
+  }
+  
+  /* Caption text */
+  .text {
+    color: #fa5d5d;
+    font-size: larger;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: -50px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #f96b6b;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  #barbershop1{
     max-width: 50%;
     height: auto;
     margin-bottom: 40px;
