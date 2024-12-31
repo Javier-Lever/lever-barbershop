@@ -41,12 +41,38 @@ header>nav>ul>li>a{
     height: auto;
 }
 
-
-
-#me{
-    max-width: 50%;
-    height: auto;
+/* main Title */
+h1{
+    text-align: center;
 }
+
+/* Hero section */
+main{
+  height: 100vh;
+  width: 100%;
+
+  background-image: url("images/Me.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  padding-left: 2rem;
+}
+main>h2{
+    color: #fa5d5d;
+}
+
+main>p{
+    max-width: 40%;
+    color: #fa5d5d;
+}
+
+
+
 #image1{
     max-width: 50%;
     height: auto;
