@@ -103,6 +103,7 @@ main>p{
     max-height: 549px;
     object-fit: contain;
     width: auto;
+    margin-bottom: 40px;
   }
 
   /* Next & previous buttons */
@@ -137,7 +138,6 @@ main>p{
     color: #fa5d5d;
     font-size: larger;
     padding: 8px 12px;
-    margin-top: 40px;
     position: absolute;
     bottom: -50px;
     width: 100%;
@@ -235,7 +235,7 @@ main>p{
 
 #whatsapp-button {
   position: fixed;
-  bottom: 150px;
+  bottom: 250px;
   right: 30px;
   padding: 10px;
 }
@@ -272,6 +272,23 @@ footer {
       float: none;
   }
   
+  .text{
+    font-size: 1em;
+  }
+
+
+  #whatsapp-button {
+    position: fixed;
+    bottom: 200px;
+    right: 0;
+    padding: 10px;
+  }
+
+  #whatsapp-img{
+    width: 40px;
+    height: 40px;
+  }
+  
 }
 
 @media(min-width:600px){
@@ -280,6 +297,7 @@ footer {
     margin: auto;
 
   }
+
 }
 
 @media(min-width:800px){
